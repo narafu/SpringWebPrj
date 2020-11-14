@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="calc-app">
+
+<head>
+    <title>angularjs</title>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="angularjs.js"></script>
+</head>
+
+<body>
+
+    <section ng-controller="calc-controller">
+        <h1>계산기 View</h1>
+        <input type="text" ng-model="x">
+        <input type="text" ng-model="y">
+        <input type="submit" value="계산" ng-click="calcClick()">
+        {{x+y}}
+    </section>
+
+    <section>
+        <h1>갤러리</h1>
+        {{3+4}}
+    </section>
+
+</body>
+
+</html>
